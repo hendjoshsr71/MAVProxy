@@ -422,6 +422,16 @@ If PIDR.I has a constant positive value then it means the aircraft is trimmed to
   <expression>PIDA.P PIDA.I PIDA.D</expression>
  </graph>
 
+ <graph name='Copter/PID/SRates'>
+  <description></description>
+  <expression>PIDR.SRate PIDP.SRate PIDY.SRate</expression>
+ </graph>
+
+ <graph name='Copter/PID/DMods'>
+  <description></description>
+  <expression>PIDR.Dmod PIDP.Dmod PIDY.Dmod</expression>
+ </graph>
+
   <graph name='SITL/SIM RollRate vs GyrX'>
   <description></description>
   <expression>IMU[0].GyrX sim_body_rates(SIM).x</expression>
@@ -599,6 +609,15 @@ If PIDR.I has a constant positive value then it means the aircraft is trimmed to
   <expression>PSCZ.PZ PSCZ.TPZ</expression>
  </graph>
 
+ <graph name='PSC/PID/PIDE'>
+  <description></description>
+  <expression>PIDE.P PIDE.I PIDE.D</expression>
+ </graph>
+
+ <graph name='PSC/PID/PIDN'>
+  <description></description>
+  <expression>PIDN.P PIDN.I PIDN.D</expression>
+ </graph>
 
  <graph name='EKF3/Normalised Innovations EKF3 Lane100'>
   <description></description>
@@ -755,6 +774,17 @@ If PIDR.I has a constant positive value then it means the aircraft is trimmed to
  <graph name='Copter/RateAttYaw'>
   <description></description>
   <expression>RATE.Y RATE.YDes ATT.Yaw:2 ATT.DesYaw:2</expression>
+ </graph>
+
+
+ <graph name='Power/Battery/BATT0 Volts and Current'>
+  <description></description>
+  <expression>BAT[0].Volt BAT[0].VoltR BAT[0].Curr:2</expression>
+ </graph>
+
+ <graph name='Power/Battery/BATT0 mAh and Temperature'>
+  <description></description>
+  <expression>BAT[0].CurrTot BAT[0].Temp:2</expression>
  </graph>
 
  

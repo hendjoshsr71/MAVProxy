@@ -379,6 +379,16 @@
   <expression>PIQA.P PIQA.I PIQA.D</expression>
  </graph>
 
+ <graph name='Quadplane/PID Tuning/PIQ SRates'>
+  <description></description>
+  <expression>PIQR.SRate PIQP.SRate PIQY.SRates</expression>
+ </graph>
+
+ <graph name='Quadplane/PID Tuning/PIQ DMods'>
+  <description></description>
+  <expression>PIQR.Dmod PIQP.Dmod PIQY.Dmod</expression>
+ </graph>
+
  <graph name='Plane/PID Tuning/PIDR'>
   <description></description>
   <expression>PIDR.FF PIDR.P PIDR.I PIDR.D</expression>
@@ -394,4 +404,39 @@
   <expression>PIDS.P PIDS.I PIDS.D</expression>
  </graph>
 
+ <graph name='QUIK/Tune'>
+  <description></description>
+  <expression>QUIK.Gain QUIK.SRATE</expression>
+ </graph>
+
+ <graph name='FFT/FTN/NTCH Freqs 1-3'>
+  <description></description>
+  <expression>FTN.NF1 FTN.NF2 FTN.NF3 FTN.NDn:2</expression>
+ </graph>
+ 
+ <graph name='FFT/FTN1/Fit R-P'>
+  <description></description>
+  <expression>FTN1.FtX FTN1.FtY FTN.NDn:2</expression>
+ </graph>
+
+ <graph name='FFT/FTN1/Signal to Noise'>
+  <description></description>
+  <expression>FTN1.SnX FTN1.SnY FTN1.SnZ FTN.NDn:2</expression>
+ </graph>
+
+ <graph name='FFT/Roll Peaks 1-3'>
+  <description></description>
+  <expression>FTN2[0].PkX FTN2[1].PkX FTN2[2].PkX FTN.NDn:2</expression>
+ </graph>
+ 
+ <graph name='FFT/Pitch Peaks 1-3'>
+  <description></description>
+  <expression>FTN2[0].PkY FTN2[1].PkY FTN2[2].PkY FTN.NDn:2</expression>
+ </graph>
+
+ <graph name='FFT/Yaw Peaks 1-3'>
+  <description></description>
+  <expression>FTN2[0].PkZ FTN2[1].PkZ FTN2[2].PkZ FTN.NDn:2</expression>
+ </graph>
+ 
 </graphs>
